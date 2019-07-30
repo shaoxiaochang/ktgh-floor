@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bc_yellow {
+            background-color: #FFF0C7;
+        }
+        .border1 {
+            border: 1px #939598 solid;
+        }
+        #box1 {
+            background-color: #939598;
+            width: 500px;
+            height: 280px;
+            -webkit-clip-path: polygon(0 0, 79% 0, 79% 48%, 100% 48%, 100% 69%, 52% 69%, 52% 100%, 15% 100%, 15% 71%, 0 71%);
+            clip-path: polygon(0 0, 79% 0, 79% 48%, 100% 48%, 100% 69%, 52% 69%, 52% 100%, 15% 100%, 15% 71%, 0 71%);
+            position: absolute;
+            top: 100px;
+        }
+
+        #box1 div {
+            background-color: #FFF0C7;
+            width: 500px;
+            height: 280px;
+            -webkit-clip-path: polygon(0.2% 0.2%, 78.8% 0.2%, 78.8% 48.2%, 99.8% 48.2%, 99.8% 68.8%, 51.8% 68.8%, 51.8% 99.8%, 15.2% 99.8%, 15.2% 70.8%, 0.2% 70.8%);
+            clip-path: polygon(0.2% 0.2%, 78.8% 0.2%, 78.8% 48.2%, 99.8% 48.2%, 99.8% 68.8%, 51.8% 68.8%, 51.8% 99.8%, 15.2% 99.8%, 15.2% 70.8%, 0.2% 70.8%);
+        }
+
+        #fire {
+            height: 55px;
+            width: 55px;
+            border:1px #ccc dashed;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+
+        #empty1 {
+            height: 80px;
+            width: 40px;
+            position: absolute;
+            top: 298px;
+            left: 465px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: #FFF0C7;
+            border: 1px #939598 solid;
+        }
+
+        #b02 {
+            position: absolute;
+            top: 8px;
+            left: 110px;
+        }
+        #b03 {
+            position: absolute;
+            top: 8px;
+            left: 210px;
+        }
+        #b04 {
+            position: absolute;
+            top: 8px;
+            left: 310px;
+        }
+        #b05 {
+            position: absolute;
+            top: 8px;
+            left: 410px;
+        }
+
+        .road {
+            background-color: rgb(190, 190, 190);
+            width: 100px;
+            height: 20px;
+            border: 1px #939598 solid;
+        }
+        #r02 {
+            position: absolute;
+            top: 110px;
+            left: 110px;
+        }
+        #r03 {
+            position: absolute;
+            top: 110px;
+            left: 210px;
+        }
+        #r04 {
+            position: absolute;
+            top: 110px;
+            left: 310px;
+        }
+        #r05 {
+            position: absolute;
+            top: 110px;
+            left: 410px;
+        }
+
+        #b07 {
+            position: absolute;
+            top: 132px;
+            left: 110px;
+        }
+        #b08 {
+            position: absolute;
+            top: 132px;
+            left: 210px;
+            width: 60px;
+        }
+
+        #r06 {
+            position: absolute;
+            top: 132px;
+            left: 270px;
+            height: 100px;
+            width: 40px;
+            background-color: rgb(190, 190, 190);
+            border: 1px #939598 solid;
+        }
+        #b09 {
+            position: absolute;
+            top: 132px;
+            left: 310px;
+        }
+        #b10 {
+            position: absolute;
+            top: 132px;
+            left: 410px;
+        }
+        #r08 {
+            position: absolute;
+            top: 234px;
+            left: 110px;
+        }
+        #r09 {
+            position: absolute;
+            top: 234px;
+            left: 210px;
+        }
+        #r10 {
+            position: absolute;
+            top: 234px;
+            left: 310px;
+        }
+        #r11 {
+            position: absolute;
+            top: 234px;
+            left: 410px;
+        }
+        #b12 {
+            position: absolute;
+            top: 256px;
+            left: 110px;
+        }
+        #b13 {
+            position: absolute;
+            top: 256px;
+            left: 210px;
+        }
+        #b14 {
+            position: absolute;
+            top: 256px;
+            left: 310px;
+        }
+        #b15 {
+            position: absolute;
+            top: 256px;
+            left: 410px;
+        }
+    </style>
+</head>
+<body>
+    <div id="b01" class="box">01</div>
+    <div id="b02" class="box">02</div>
+    <div id="b03" class="box">03</div>
+    <div id="b04" class="box">04</div>
+    <div id="b05" class="box">05</div>
+    <div id="r01" class="road">1-2</div>
+    <div id="r02" class="road">2-3</div>
+    <div id="r03" class="road">3-4</div>
+    <div id="r04" class="road">4-5</div>
+    <div id="r05" class="road">5-6</div>
+    <div id="b06" class="box">06</div>
+    <div id="b07" class="box">07</div>
+    <div id="b08" class="box">08</div>
+    <div id="r06">4-10</div>
+    <div id="b09" class="box">09</div>
+    <div id="b10" class="box">10</div>
+    <div id="r07" class="road">7-8</div>
+    <div id="r08" class="road">8-9</div>
+    <div id="r09" class="road">9-10</div>
+    <div id="r10" class="road">10-11</div>
+    <div id="r11" class="road">11-12</div>
+    <div id="b11" class="box">11</div>
+    <div id="b12" class="box">12</div>
+    <div id="b13" class="box">13</div>
+    <div id="b14" class="box">14</div>
+    <div id="b15" class="box">15</div>
+
+    <div id="fire" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        <img id="Img2" src="https://www.pinclipart.com/picdir/middle/169-1698872_dove-clipart-flame-transparent-background-fire-icon-png.png" draggable="true" ondragstart="Drag(event)" style="width: 50px; height: 50px;">
+    </div>
+</body>
+<script>
+    function AllowDrop(event){
+        event.preventDefault();
+    }
+    function Drag(event){
+        event.dataTransfer.setData("text",event.currentTarget.id);
+    }
+    function Drop(event){
+        event.preventDefault();
+        var data=event.dataTransfer.getData("text");
+        event.currentTarget.appendChild(document.getElementById(data));
+        console.log(event.currentTarget.id);
+    }
+
+    // create a graph class 
+    class Graph { 
+        // defining vertex array and 
+        // adjacent list 
+        constructor(noOfVertices) 
+        { 
+            this.noOfVertices = noOfVertices; 
+            this.AdjList = new Map(); 
+        } 
+    
+        // functions to be implemented 
+    
+        // add vertex to the graph 
+        addVertex(v) 
+        { 
+            // initialize the adjacent list with a 
+            // null array 
+            this.AdjList.set(v, []); 
+        }
+
+        // add edge to the graph 
+        addEdge(v, w) 
+        { 
+            // get the list for vertex v and put the 
+            // vertex w denoting edge betweeen v and w 
+            this.AdjList.get(v).push(w); 
+        
+            // Since graph is undirected, 
+            // add an edge from w to v also 
+            this.AdjList.get(w).push(v); 
+        }
+
+        // Prints the vertex and adjacency list 
+        printGraph() 
+        { 
+            // get all the vertices 
+            var get_keys = this.AdjList.keys(); 
+        
+            // iterate over the vertices 
+            for (var i of get_keys)  
+        { 
+                // great the corresponding adjacency list 
+                // for the vertex 
+                var get_values = this.AdjList.get(i); 
+                var conc = ""; 
+        
+                // iterate over the adjacency list 
+                // concatenate the values into a string 
+                for (var j of get_values) 
+                    conc += j + " "; 
+        
+                // print the vertex and its adjacency list 
+                console.log(i + " -> " + conc); 
+            } 
+        }
+    
+        // Main DFS method 
+        dfs(startingNode) 
+        {
+            var visited = []; 
+            for (var i = 0; i < this.noOfVertices; i++) 
+                visited[i] = false; 
+            
+            this.DFSUtil(startingNode, visited); 
+        } 
+        
+        // Recursive function which process and explore 
+        // all the adjacent vertex of the vertex with which it is called 
+        DFSUtil(vert, visited)
+        {
+            visited[vert] = true; 
+            console.log(vert); 
+        
+            var get_neighbours = this.AdjList.get(vert); 
+        
+            for (var i in get_neighbours) {
+                var get_elem = get_neighbours[i];
+                if (!visited[get_elem]) 
+                    this.DFSUtil(get_elem, visited);
+            } 
+        }
+
+        printAllPaths(startingNode) {
+            var visited = new Map();
+            var path = [];
+            var path_index = 0;
+            for (var key of this.AdjList.keys()){
+                visited.set(key, false);
+            }
+
+            this.printAllPathsUtil(startingNode, visited, path, path_index, true); 
+        }
+
+        printAllPathsUtil(vert, visited, path, path_index, initial) {
+            visited.set(vert, true);
+            path[path_index] = vert;
+            path_index++;
+
+            var get_neighbours = this.AdjList.get(vert);
+
+            if ( get_neighbours.length === 1 && !initial){
+                console.log(path)
+            }
+            else {
+                for (var i of get_neighbours) {
+                    if (!visited.get(i) && i !== path[path_index - 1]) {
+                        this.printAllPathsUtil(i, visited, path, path_index, false);
+                    }
+                }
+            }
+
+            path_index--;
+            path.pop();
+            visited[vert] = false;
+        }
+    } 
+
+    // var g = new Graph(6); 
+    // var vertices = [ 'A', 'B', 'C', 'D', 'E', 'F' ]; 
+    
+    // // adding vertices 
+    // for (var i = 0; i < vertices.length; i++) { 
+    //     g.addVertex(vertices[i]); 
+    // } 
+    
+    // // adding edges 
+    // g.addEdge('A', 'B'); 
+    // g.addEdge('B', 'D'); 
+    // g.addEdge('B', 'E'); 
+    // g.addEdge('E', 'F'); 
+    // g.addEdge('A', 'C'); 
+
+    // g.printAllPaths('A');
+
+    var g = new Graph(12); 
+    var vertices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    for (var i = 0; i < vertices.length; i++) { 
+        g.addVertex(vertices[i]); 
+    }
+    g.addEdge(1, 2);
+    g.addEdge(2, 3);
+    g.addEdge(3, 4);
+    g.addEdge(4, 5);
+    g.addEdge(5, 6);
+    g.addEdge(7, 8);
+    g.addEdge(8, 9);
+    g.addEdge(9, 10);
+    g.addEdge(10, 11);
+    g.addEdge(11, 12);
+    g.addEdge(4, 10);
+
+    console.log("Start from 1")
+    g.printAllPaths(1);
+    console.log("Start from 7")
+    g.printAllPaths(7);
+
+    // function Graph() {
+    //     let vertices = [];
+
+    //     const adjList = new Dictionary();
+
+    //     this.addVertex = function(v) {
+    //         vertices.push(v);
+    //         adjList.set(v, []);
+    //     };
+
+    //     this.addEdge = function(v, w) {
+    //         adjList.get(v).push(w);
+    //         adjList.get(w).push(v);
+    //     };
+
+    //     this.toString = function() {
+    //         let s = '';
+    //         for(let i = 0; i < vertices.length; i++) {
+    //             s += vertices[i] + '->';
+    //             let neighbors = adjList.get(vertices[i]);
+    //             for(let j = 0; j < neighbors.length; j++) {
+    //                 s += neighbors[j] + ' ';
+    //             }
+    //             s += '\n';
+    //         }
+    //         return s;
+    //     }
+    // }
+
+    // function Dictionary() {
+    //     let items = {};
+    //     this.set = function(key, value) {
+    //         items[key] = value;
+    //     };
+    //     this.remove = function(key) {};
+    //     this.has = function(key) {};
+    //     this.get = function(key) {
+    //         return items[key];
+    //     };
+    //     this.clear = function() {};
+    //     this.size = function() {};
+    //     this.keys = function() {};
+    //     this.values = function() {};
+    // }
+
+    // const graph = new Graph();
+    // let vertices = [1, 2, ,3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    // for(let i = 0; i < vertices.length; i++) {
+    //     graph.addVertex(vertices[i]);
+    // }
+    // graph.addEdge(1, 2);
+    // graph.addEdge(2, 3);
+    // graph.addEdge(3, 4);
+    // graph.addEdge(4, 5);
+    // graph.addEdge(5, 6);
+    // graph.addEdge(7, 8);
+    // graph.addEdge(8, 9);
+    // graph.addEdge(9, 10);
+    // graph.addEdge(10, 11);
+    // graph.addEdge(11, 12);
+    // graph.addEdge(4, 10);
+    
+
+    // console.log(graph.toString());
+
+</script>
+</html>

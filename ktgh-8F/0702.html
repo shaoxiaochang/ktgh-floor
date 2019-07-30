@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="f8.css">
+</head>
+<body>
+    <!-- 1cm=25px -->
+    <div id="main">
+        <div id="room801" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">801</div>
+        <div id="room802" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">802</div>
+        <div id="room803" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">803</div>
+        <div id="room805" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">805</div>
+        <div id="room806" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">806</div>
+        <div id="room807" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">807</div>
+        <div id="room813" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">813</div>
+        <div id="room815" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">815</div>
+        <div id="room816" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">816</div>
+        <div id="room817" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">817</div>
+        <div id="room818" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">818</div>
+        <div id="room819" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">819</div>
+        <div id="room820" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">820</div>
+        <div id="room821" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">821</div>
+        <div id="room822" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">822</div>
+        <div id="room823" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">823</div>
+        <div id="room850" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">850</div>
+        <div id="room851" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">851</div>
+        <div id="room852" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">852</div>
+        <div id="room853" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">853</div>
+        <div id="room855" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">855</div>
+        <div id="room856" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">856</div>
+        <div id="room857" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">857</div>
+        <div id="room858" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">858</div>
+        <div id="room859" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">859</div>
+        <div id="room860" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">860</div>
+        <div id="room861" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">861</div>
+        <div id="room862" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">862</div>
+        <div id="room863" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">863</div>
+        <div id="room865" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            865
+            <div class="block">r11</div>
+        </div>
+        <div id="room866" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">866</div>
+        <div id="cross_border" class="bgc_border">
+            <div id="cross"></div>
+        </div>
+        <div id="nursing_station" >
+
+            <div id="b01" class="bgc_border"></div>
+            <div id="b02" class="bgc_border"></div>
+            <div id="b03" class="bgc_border"></div>
+            <div id="b04" class="bgc_border"></div>
+            <div id="b05" class="bgc_border"></div>
+            <div id="b06" class="bgc_border"></div>
+        </div>
+        <div class="straight_line" style="height: 13px; top:373px; left:368px;"></div>
+        <div id="stair01" class="bgc_staris b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口1
+            <div class="block">r03</div>
+        </div>
+        
+        <div id="stair02" class="bgc_staris b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口2
+            <div class="block">r18</div>
+        </div>
+        <div id="stair03" class="bgc_staris b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口3
+        </div>
+        <div id="stair05" class="bgc_staris b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+        出口4
+        </div>
+        <div id="stair06" class="bgc_staris b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口5
+        </div>
+
+
+        
+        <div id="r03" class="road start">
+            
+            <div class="edge right">r04</div>
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r04" class="road">
+            
+            <div class="edge left">r03</div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r05" class="road">
+            
+            <div class="edge left">r04</div>
+            <div class="edge right">r06</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r06" class="road">
+            
+            <div class="edge left">r05</div>
+            <div class="edge right">r29</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r09" class="road">
+            
+            <div class="edge top">r04</div>
+            <div class="edge bottom">r10</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r10" class="road">
+            
+            <div class="edge top">r09</div>
+            <div class="edge bottom">r11</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r11" class="road">
+            
+            <div class="edge top">r10</div>
+            <div class="edge bottom">r18</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r12" class="road">
+            
+            <div class="edge right">r13</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r13" class="road">
+            
+            <div class="edge left">r12</div>
+            <div class="edge right">r14</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r14" class="road">
+            
+            <div class="edge left">r13</div>
+            <div class="edge right">r15</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r15" class="road">
+            
+            <div class="edge left">r14</div>
+            <div class="edge right">r16</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r16" class="road">
+            
+            <div class="edge left">r15</div>
+            <div class="edge right">r17</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r17" class="road">
+            
+            <div class="edge left">r16</div>
+            <div class="edge right">r18</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r18" class="road start">
+            
+            <div class="edge top">r11</div>
+            <div class="edge left">r17</div>
+            <div class="edge right">r19</div>
+            <div class="arrow arrow_bottom start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r19" class="road">
+            
+            <div class="edge left">r18</div>
+            <div class="edge right">r20</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r20" class="road">
+            
+            <div class="edge left">r19</div>
+            <div class="edge right">r21</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r21" class="road">
+            
+            <div class="edge left">r20</div>
+            <div class="edge right">r22</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r22" class="road">
+            
+            <div class="edge left">r21</div>
+            <div class="edge right">r23</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r23" class="road">
+            
+            <div class="edge left">r22</div>
+            <div class="edge right">r57</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r29" class="road">
+            
+            <div class="edge left">r06</div>
+            <div class="edge right">r30</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r30" class="road start">
+            
+            <div class="edge left">r29</div>
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r31" class="road">
+            
+            <div class="edge left">r30</div>
+            <div class="edge right">r32</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r32" class="road">
+            
+            <div class="edge top">r33</div>
+            <div class="edge left">r31</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r33" class="road">
+            
+            <div class="edge top">r34</div>
+            <div class="edge bottom">r32</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r34" class="road">
+            
+            <div class="edge top">r35</div>
+            <div class="edge bottom">r33</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r35" class="road">
+            
+            <div class="edge bottom">r34</div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r36" class="road">
+            
+            <div class="edge top">r32</div>
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_top"></div>
+        </div>
+        <div id="r42" class="road">
+            
+            <div class="edge top">r43</div>           
+            <div class="arrow arrow_top"></div>
+        </div>
+        <div id="r43" class="road">
+            
+            <div class="edge top">r42</div>
+            <div class="edge top">r51</div>
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_top"></div>
+            
+        </div>
+        <div id="r44" class="road">
+            
+            <div class="edge left">r55</div>
+            <div class="edge right">r45</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r45" class="road">
+            
+            <div class="edge left">r44</div>
+            <div class="edge right">r46</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r46" class="road">
+            
+            <div class="edge left">r45</div>
+            <div class="edge right">r47</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r47" class="road">
+            
+            <div class="edge left">r46</div>
+            <div class="edge right">r48</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r48" class="road">
+            
+            <div class="edge right">r47</div>
+            <div class="edge right">r49</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r49" class="road">
+            
+            <div class="edge right">r48</div>
+            <div class="edge right">r50</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r50" class="road">
+            
+            <div class="edge right">r49</div>
+            <div class="edge right">r51</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r51" class="road">
+            
+            <div class="edge bottom">r43</div>
+            <div class="edge left">r50</div>
+            <div class="edge right">r52</div>
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r52" class="road">
+            
+            <div class="edge left">r51</div>
+            <div class="edge right">r53</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_ri"></div>
+        </div>
+        <div id="r53" class="road">
+            
+            <div class="edge left">r52</div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r54" class="road">
+            
+            <div class="edge top">r30</div>
+            <div class="edge bottom">r55</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r55" class="road">
+            
+            <div class="edge top">r54</div>
+            <div class="edge bottom">r56</div>
+            <div class="edge right">r44</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r56" class="road">
+            
+            <div class="edge top">r59</div>
+            <div class="edge bottom">r57</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r57" class="road start">
+            
+            <div class="edge top">r56</div>
+            <div class="edge left">r23</div>
+            <div class="arrow arrow_bottom start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r58" class="road start">
+            <div class="edge bottom">r57</div>
+            <div class="arrow arrow_bottom start" style="left: calc(50% - 7px);"></div>
+            <div class="arrow arrow_bottom"></div>
+
+        </div>
+        <div id="r59" class="road start">
+            <div class="edge top">r55</div>
+            <div class="edge bottom">r56</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_bottom"></div>
+
+        </div>
+        <div id="elevator01" class="bgc_staris b1"></div>
+        <div id="elevator02" class="bgc_staris b1"></div>
+        <div id="elevator03" class="bgc_staris b1"></div>
+        <div id="elevator04" class="bgc_staris b1"></div>
+        <div id="elevator05" class="bgc_staris b1"></div>
+        <div id="elevator06" class="bgc_staris b1"></div>
+        
+        <div id="temp04" class="bgc_white b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp05" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp06" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp11_border" class="bgc_border" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            <div id="temp11" class="bgc_white" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        </div>
+        <div id="temp12" class="bgc_white b1"></div>
+            <div id="temp13" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp16" class="bgc_blue b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp18" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp19" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp21" class="bgc_yellow b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp22" class="bgc_white b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp23_border" class="bgc_border" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            <div id="temp23" class="bgc_white"></div>
+        </div>
+        <div id="temp24" class="bgc_white b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp25" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        <div id="temp26" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)" ></div>
+        <div id="temp27" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)" ></div>
+        <div id="temp071" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)" ></div>
+        <div id="temp072" class="bgc_gray b1" ondrop="Drop(event)" ondragover="AllowDrop(event)"></div>
+        
+        
+        <div id="NFTU_border" class="bgc_border" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            <div id="NFTU"></div>
+        </div>
+        <div id="CDJEJ_border" class="bgc_border" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            <div id="CDCEJ" class="bgc_pink"></div>
+        </div>
+
+        
+        
+        <div class="straight_line" style="height: 26px; top:718px; left:635px;"></div>
+        <div class="straight_line" style="height: 45px; top:550px; left:87px;"></div>
+        <div class="straight_line" style="width:158px; top:550px; left:87px;"></div>
+        <div class="straight_line" style="height: 60px; top:190px; left:832px;"></div>
+        <div class="straight_line" style="width:36px; top:190px; left:795px;"></div>
+        <div class="straight_line" style="height: 25px; top:360px; left:325px;"></div>
+        <div class="straight_line" style="height: 27px; top:439px; left:1199px;"></div>
+        <div id="fire_set" class="b1" ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            <img id="fire" src="fire-element.png" alt="fire" draggable="true" ondragstart="Drag(event)">
+            <button onclick="goBack()" id="return_button">
+                <img src="return.png" alt="return">
+            </button>
+        </div>
+
+        
+        
+    </div>
+    <script>
+        function goBack() {
+            reset();
+            var fire = document.getElementById("fire");
+            document.getElementById("fire_set").appendChild(fire);
+            var returnButton = document.getElementById("return_button");
+            returnButton.style.display = "none";
+        }
+        class Queue {
+            constructor(){
+                this.queue = []
+            }
+            enqueue(val){
+                this.queue.unshift(val)
+            }
+            dequeue(){
+                return this.queue.pop()
+            }
+            front() {
+                return this.queue[this.queue.length - 1];
+            }
+
+            get length() {
+                return this.queue.length;
+            }
+        }
+
+        // create a graph class 
+        class Graph { 
+            // defining vertex array and 
+            // adjacent list 
+            constructor(noOfVertices) 
+            { 
+                this.noOfVertices = noOfVertices; 
+                this.AdjList = new Map(); 
+            } 
+        
+            // functions to be implemented 
+        
+            // add vertex to the graph 
+            addVertex(v) 
+            { 
+                // initialize the adjacent list with a 
+                // null array 
+                this.AdjList.set(v, []); 
+            }
+
+            // add edge to the graph 
+            addEdge(v, w) 
+            { 
+                // get the list for vertex v and put the 
+                // vertex w denoting edge betweeen v and w 
+                this.AdjList.get(v).push(w); 
+            
+                // Since graph is undirected, 
+                // add an edge from w to v also 
+                // this.AdjList.get(w).push(v); 
+            }
+
+            RemoveNode(node)
+            {
+                if (this.AdjList.has(node)) {
+                    this.AdjList.delete(node);
+                }
+
+                var get_keys = this.AdjList.keys();
+                for (var i of get_keys)  
+                { 
+                    var get_values = this.AdjList.get(i); 
+            
+                    var index = get_values.indexOf(node);
+                    if (index !== -1) {
+                        get_values.splice(index, 1);
+                    }
+                }
+            }
+
+            // Prints the vertex and adjacency list 
+            printGraph() 
+            { 
+                // get all the vertices 
+                var get_keys = this.AdjList.keys(); 
+            
+                // iterate over the vertices 
+                for (var i of get_keys)  
+                { 
+                    // great the corresponding adjacency list 
+                    // for the vertex 
+                    var get_values = this.AdjList.get(i); 
+                    var conc = ""; 
+            
+                    // iterate over the adjacency list 
+                    // concatenate the values into a string 
+                    for (var j of get_values) 
+                        conc += j + " "; 
+            
+                    // print the vertex and its adjacency list 
+                    console.log(i + " -> " + conc); 
+                }
+            }
+        
+            // Main DFS method 
+            dfs(startingNode) 
+            {
+                var visited = []; 
+                for (var i = 0; i < this.noOfVertices; i++) 
+                    visited[i] = false; 
+                
+                this.DFSUtil(startingNode, visited); 
+            } 
+            
+            // Recursive function which process and explore 
+            // all the adjacent vertex of the vertex with which it is called 
+            DFSUtil(vert, visited)
+            {
+                visited[vert] = true; 
+                console.log(vert); 
+            
+                var get_neighbours = this.AdjList.get(vert); 
+            
+                for (var i in get_neighbours) {
+                    var get_elem = get_neighbours[i];
+                    if (!visited[get_elem]) 
+                        this.DFSUtil(get_elem, visited);
+                } 
+            }
+
+            printAllPaths(startingNode) {
+                var visited = new Map();
+                var path = [];
+                var path_index = 0;
+                for (var key of this.AdjList.keys()){
+                    visited.set(key, false);
+                }
+
+                this.printAllPathsUtil(startingNode, visited, path, path_index, true); 
+            }
+
+            printAllPathsUtil(vert, visited, path, path_index, initial) {
+                visited.set(vert, true);
+                path[path_index] = vert;
+                path_index++;
+
+                var get_neighbours = this.AdjList.get(vert);
+
+                if ( get_neighbours.length === 1 && !initial){
+                    console.log(path)
+                }
+                else {
+                    for (var i of get_neighbours) {
+                        if (!visited.get(i) && i !== path[path_index - 1]) {
+                            this.printAllPathsUtil(i, visited, path, path_index, false);
+                        }
+                    }
+                }
+
+                path_index--;
+                path.pop();
+                visited[vert] = false;
+            }
+
+            bfs(startingNode)
+            {
+                var color = new Map();
+                var predecessor = new Map();
+                var distance = new Map();
+
+                var get_keys = this.AdjList.keys();
+                for (var i of get_keys) {
+                    color.set(i, 0);
+                    predecessor.set(i, -1);
+                    distance.set(i, this.noOfVertices + 1);
+                }
+                    
+                var q = new Queue();
+                var i = startingNode;
+
+                for (var j of this.AdjList.keys()) {
+                    if (color.get(i) === 0) {
+                        color.set(i, 1);
+                        distance.set(i, 0);
+                        predecessor.set(i, -1);
+                        q.enqueue(i);
+                        while (q.length > 0) {
+                            var u = q.front();
+                            var get_List = this.AdjList.get(u);
+                            for (var n of get_List){
+                                if (color.get(n) === 0) {
+                                    color.set(n, 1);
+                                    distance.set(n, distance.get(u) + 1);
+                                    predecessor.set(n, u);
+                                    q.enqueue(n);
+                                }
+                            }
+                            q.dequeue();
+                            color.set(u, 2);
+                        }
+                    }
+                    
+                    i = j;
+                }
+
+                console.log(predecessor);
+            }
+
+            getShortestPath(startingNode, exits)
+            {
+                //Initialize
+                var color = new Map();
+                var predecessor = new Map();
+                var distance = new Map();
+
+                for (var i of this.AdjList.keys()) {
+                    color.set(i, 0);
+                    predecessor.set(i, -1);
+                    distance.set(i, this.noOfVertices + 1);
+                }
+
+                var q = new Queue();
+                var i = startingNode;
+                var findTarget = '';
+                var targets = exits;
+
+                if (color.get(i) === 0) {
+                    color.set(i, 1);
+                    distance.set(i, 0);
+                    predecessor.set(i, -1);
+                    q.enqueue(i);
+                    while (q.length > 0) {
+                        var u = q.front();
+                        var get_List = this.AdjList.get(u);
+                        for (var n of get_List){
+                            if (color.get(n) === 0) {
+                                color.set(n, 1);
+                                distance.set(n, distance.get(u) + 1);
+                                predecessor.set(n, u);
+                                q.enqueue(n);
+                            }
+
+                            if (targets.includes(n)) {
+                                findTarget = n;
+                                break;
+                            }
+                        }
+
+                        if (findTarget !== '') {
+                            break;
+                        }
+                        q.dequeue();
+                        color.set(u, 2);
+                    }
+                }
+
+                var result = [];
+                var index = findTarget;
+                result.push(index);
+                if (index === '') {
+                    
+                }
+                else{
+                    while (index !== -1) {
+                        var index = predecessor.get(index);
+                        result.push(index);
+                    }
+                }
+                
+                return result;
+            }
+
+        }
+
+        var main = document.getElementById("main");
+        var road = Array.from(main.children).filter(m => m.tagName === "DIV" && m.className.includes("road"));
+        var starts = Array.from(main.children).filter(m => m.tagName === "DIV" && m.className.includes("start"));
+        var g = new Graph(road.length); 
+        road.forEach(r => g.addVertex(r.id));
+        road.forEach(r => {
+            var edges = Array.from(r.children).filter(c => c.className.includes("edge"));
+            edges.forEach(e => g.addEdge(r.id, e.textContent));
+        });
+
+
+        function activatePaths(blockNode = []) {
+            reset();
+
+            if (blockNode.length > 0) {
+                blockNode.forEach(b => g.RemoveNode(b));
+            }
+
+            road.forEach(r => {
+                console.log(`Start From ${r.id}`);
+
+                var path = g.getShortestPath(r.id, ['r03', 'r18', 'r30', 'r40', 'r57']);
+                console.log(path);
+                //出口
+                if (path[0] === r.id){
+                    var t = r.getElementsByClassName("start");
+                    t[0].style.display = "block";
+                    console.log("出口")
+                }
+                //
+                for (var e of r.children) {
+                    if (!e.className.includes("edge")) {
+                        continue;
+                    }
+                    if (path.includes(e.textContent)) {
+                        if (e.className.includes("left")) {
+                            var t = r.getElementsByClassName("arrow_left");
+                            t[0].style.display = "block";
+                        }
+                        else if (e.className.includes("right")){
+                            var t = r.getElementsByClassName("arrow_right");
+                            t[0].style.display = "block";
+                        }
+                        else if (e.className.includes("top")){
+                            var t = r.getElementsByClassName("arrow_top");
+                            t[0].style.display = "block";
+                        }
+                        else if (e.className.includes("bottom")){
+                            var t = r.getElementsByClassName("arrow_bottom");
+                            t[0].style.display = "block";
+                        }
+                        else{
+                            console.log("nothing");
+                        }
+                    }
+                }
+
+                console.log("---------------------------");
+            });
+
+        }
+
+        function reset() {
+            var arrows = document.getElementsByClassName("arrow")
+            for (var a of arrows) {
+                a.style.display = "none";
+            }
+
+            g = new Graph(road.length); 
+            road.forEach(r => g.addVertex(r.id));
+            road.forEach(r => {
+                var edges = Array.from(r.children).filter(c => c.className.includes("edge"));
+                edges.forEach(e => g.addEdge(r.id, e.textContent));
+            });
+        }
+
+        //拖拉
+        function AllowDrop(event){
+            event.preventDefault();
+        }
+        function Drag(event){
+            event.dataTransfer.setData("text",event.currentTarget.id);
+        }
+        function Drop(event){
+            event.preventDefault();
+            var data=event.dataTransfer.getData("text");
+            event.currentTarget.appendChild(document.getElementById(data));
+            
+            var returnButton = document.getElementById("return_button");
+            if (event.currentTarget.id === "fire_set") {
+                reset();
+                returnButton.style.display = "none";
+            }
+            else {
+                returnButton.style.display = "block";
+
+                var blocks = Array.from(event.currentTarget.children).filter(c => c.className.includes("block"));
+                if (blocks.length > 0) {
+                    blockNodes = blocks.map(b => b.textContent);
+                    activatePaths(blockNodes);
+                }
+                else {
+                    activatePaths();
+                }
+            }
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="11F layout.css">
+</head>
+<body>
+    <div id="main">
+        <div id="temp01" class="bgc_white b1">temp01</div>
+        <div id="temp02" class="bgc_white b1">temp02</div>
+        <div id="stari01" class="bgc_staris b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">出口1
+            <div class="block">r01</div>      
+        </div>
+        <div id="room1112_border" class="bgc_border">
+            <div id="room1112" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1112</div>
+        </div>
+        <div id="room1113" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1113</div>
+        <div id="room1115" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1115</div>
+        <div id="room1116" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1116</div>
+        <div id="room1117" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1117</div>
+        <div id="room1118" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1118</div>   
+        <div id="r01" class="road">r01
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+        </div>
+        <div id="r02" class="road">r02
+            <div class="edge top">r01</div>
+            <div class="arrow arrow_top"></div>
+        </div>
+        <div id="elevator01" class="bgc_staris b1">電梯1</div>
+        <div id="temp15" class="bgc_white b1">temp15</div>
+        <div id="temp16" class="bgc_white b1">temp16</div>
+        <div id="temp17" class="bgc_white b1">temp17</div>
+        <div id="temp19" class="bgc_white b1">temp19</div>
+        <div id="room1120" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1120</div>
+        <div id="room1121" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1121</div>
+        <div id="room1122" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1122</div>
+        <div id="room1123" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1123</div>
+        <div id="room1125" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1125</div>
+        <div id="temp03" class="bgc_white b1">temp03</div>
+        <div id="temp04" class="bgc_white b1">temp04</div>
+        <div id="temp05_border" class="bgc_border">
+            <div id="temp05" class="bgc_white">temp05</div>
+        </div>
+        <div id="stari02" class="bgc_staris b1"
+        ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口2
+            <div class="block">r08</div>      
+        </div>
+        <div id="r08" class="road">r08
+            <div class="arrow arrow_top start" style="left: calc(50% - 7px);"></div>
+            <div class="edge right">r10</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r30" class="road">r30
+            <div class="edge right">r31</div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r31" class="road">r31
+            <div class="edge left">r30</div>
+            <div class="edge right">r32</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r32" class="road">r32
+            <div class="edge left">r31</div>
+            <div class="edge right">r33</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r33" class="road">r33
+            <div class="edge left">r32</div>
+            <div class="edge right">r34</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r34" class="road">r34
+            <div class="edge left">r33</div>
+            <div class="edge right">r35</div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+        </div>
+        <div id="r35" class="road">r35
+            <div class="edge left">r34</div>
+            <div class="arrow arrow_left"></div>
+        </div>
+
+        <div id="temp06" class="bgc_white b1">temp06</div>
+        <div id="temp07" class="bgc_white b1">temp07</div>
+        <div id="Nursing_Station" class="bgc_pink b1">護理站</div>
+        <div id="r09" class="road">r09
+            <div class="edge bottom">r10</div>
+            <div class="arrow arrow_bottom"></div>
+            <div class="arrow arrow_left start" style="left: calc(50% - 7px);"></div>
+        </div>
+        <div id="r10" class="road">r10
+            <div class="edge right">r08</div>
+            <div class="edge top">r09</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_top"></div>
+        </div>
+        <div id="r21" class="road">r21
+            <div class="edge top">r10</div>
+            <div class="edge left">r22</div>
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r22" class="road">r22
+            <div class="edge right">r21</div>
+            <div class="edge left">r23</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r23" class="road">r23
+            <div class="edge right">r22</div>
+            <div class="edge left">r24</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r24" class="road">r24
+            <div class="edge right">r23</div>
+            <div class="edge left">r25</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="elevator02" class="bgc_staris b1">電梯2</div>
+        <div id="elevator03" class="bgc_staris b1">電梯3</div>
+        <div id="elevator04" class="bgc_staris b1">電梯4</div>
+        <div id="temp08" class="bgc_white b1"></div>
+        <div id="elevator05" class="bgc_staris b1">電梯5</div>
+        
+        <div id="temp10" class="bgc_white b1">temp10</div>
+        <div id="temp11" class="bgc_white b1">temp11</div>
+        <div id="temp12" class="bgc_white b1">temp12</div>
+        <div id="r11" class="road">r11
+            <div class="arrow arrow_right start" style="left: calc(50% - 7px);"></div>
+        </div>
+        
+        <div id="stari03" class="bgc_staris b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">
+            出口3
+            <div class="block">r11</div>
+        </div>
+        <div id="temp13" class="bgc_white b1">temp13</div>
+        <div id="room1102" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1102</div>
+        <div id="room1103" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1103</div>
+        <div id="room1105" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1105</div>
+        <div id="room1106" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1106</div>
+        <div id="room1107" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1107</div>
+        <div id="r13" class="road">r13
+            <div class="edge left">r19</div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r20" class="road">r20
+            <div class="edge bottom">r29</div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r29" class="road">r29
+            <div class="edge top">r20</div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="temp14" class="bgc_white b1">temp14</div>
+        <div id="room1108" class="bgc_yellow b1"ondrop="Drop(event)" ondragover="AllowDrop(event)">1108</div>
+        <div class="horizontal_line" style="width: 365px; top:650px; left:500px;"></div>
+        <div class="horizontal_line" style="width: 139px; top:260px; left:1010px;"></div>
+        <div class="horizontal_line" style="width: 20px; top:300px; left:1091px;"></div>
+        <div class="straight_line" style="height: 20px; top:300px; left:1091px;"></div>
+        <div class="straight_line" style="height: 20px; top:300px; left:1112px;"></div>
+        <div class="straight_line" style="height: 65px; top:365px; left:583px;"></div>
+        <div class="straight_line" style="height: 110px; top:320px; left:1030px;"></div>
+        <div class="horizontal_line" style="width: 60px; top:790px; left:1030px;"></div>
+        #<div class="horizontal_line" style="width: 60px; top:429px; left:1030px;"></div>
+        <div id="r14" class="road">r14
+            <div class="edge right">r03</div>
+            <div class="edge bottom">r05</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div id="r15" class="road">r15
+            <div class="edge right">r14</div>
+            <div class="edge left">r16</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r16" class="road">r16
+            <div class="edge right">r15</div>
+            <div class="edge left">r17</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r17" class="road">r17
+            <div class="edge right">r16</div>
+            <div class="edge left">r18</div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        <div id="r18" class="road">r18
+            <div class="edge right">r17</div>
+            <div class="edge left">r13/div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_left"></div>
+        </div>
+        
+        
+       
+
+        
+</body>
+</html>
